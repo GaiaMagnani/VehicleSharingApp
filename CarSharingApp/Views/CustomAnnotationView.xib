@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomAnnotationView" customModule="CarSharingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="163"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FbJ-ih-KI5">
+                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7V2-tg-kyW"/>
+                        <constraint firstAttribute="width" constant="50" id="IE5-d8-BAh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pV-Cj-R8L">
+                    <rect key="frame" x="68" y="10" width="44.5" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Livello carburante:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9w-Vt-UkM">
+                    <rect key="frame" x="68" y="64.5" width="140" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FM-3J-Ika">
+                    <rect key="frame" x="223" y="64.5" width="44.5" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDb-wT-xUl">
+                    <rect key="frame" x="84" y="104.5" width="130" height="33"/>
+                    <color key="backgroundColor" red="0.47028821243523311" green="0.13495117391951228" blue="0.10768910240999842" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="kTu-Ik-rHz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="PRENOTA">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="prenotaAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="VpA-sx-GCq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGb-xl-us8">
+                    <rect key="frame" x="68" y="39" width="32" height="15.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a9w-Vt-UkM" firstAttribute="leading" secondItem="FbJ-ih-KI5" secondAttribute="trailing" constant="8" id="4Di-xJ-gTQ"/>
+                <constraint firstItem="2FM-3J-Ika" firstAttribute="leading" secondItem="a9w-Vt-UkM" secondAttribute="trailing" constant="15" id="5B3-yd-1gd"/>
+                <constraint firstItem="RGb-xl-us8" firstAttribute="top" secondItem="2pV-Cj-R8L" secondAttribute="bottom" constant="9" id="B5e-ee-tM5"/>
+                <constraint firstItem="2pV-Cj-R8L" firstAttribute="leading" secondItem="FbJ-ih-KI5" secondAttribute="trailing" constant="8" id="IwP-u9-gUG"/>
+                <constraint firstItem="a9w-Vt-UkM" firstAttribute="leading" secondItem="2pV-Cj-R8L" secondAttribute="leading" id="NbU-4K-f7J"/>
+                <constraint firstItem="FbJ-ih-KI5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="OjY-C3-gYW"/>
+                <constraint firstItem="2pV-Cj-R8L" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="SRb-8L-rIL"/>
+                <constraint firstItem="FbJ-ih-KI5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="U0f-Kb-aob"/>
+                <constraint firstItem="PDb-wT-xUl" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="a2y-TB-Mnt"/>
+                <constraint firstItem="PDb-wT-xUl" firstAttribute="top" secondItem="a9w-Vt-UkM" secondAttribute="bottom" constant="20" id="bV8-2B-xZK"/>
+                <constraint firstItem="2FM-3J-Ika" firstAttribute="baseline" secondItem="a9w-Vt-UkM" secondAttribute="baseline" id="c8L-75-ZBL"/>
+                <constraint firstItem="a9w-Vt-UkM" firstAttribute="top" secondItem="RGb-xl-us8" secondAttribute="bottom" constant="10" id="jq5-nY-LeW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RGb-xl-us8" secondAttribute="trailing" constant="10" id="uS2-Wz-i5y"/>
+                <constraint firstItem="RGb-xl-us8" firstAttribute="leading" secondItem="2pV-Cj-R8L" secondAttribute="leading" id="zdz-tk-9L6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="address" destination="RGb-xl-us8" id="rPf-CY-GXn"/>
+                <outlet property="button" destination="PDb-wT-xUl" id="mHP-hU-Je1"/>
+                <outlet property="fuelLabel" destination="2FM-3J-Ika" id="WLo-M8-EN1"/>
+                <outlet property="img" destination="FbJ-ih-KI5" id="opR-oA-f9N"/>
+                <outlet property="modelLabel" destination="2pV-Cj-R8L" id="eZ9-qL-Tue"/>
+            </connections>
+            <point key="canvasLocation" x="-48" y="-468.5"/>
+        </view>
+    </objects>
+</document>
