@@ -16,7 +16,7 @@ class ServiceRequest {
     func makeRequest(completionHandler :  @escaping () -> Void,
                      errCompletionHandler :  ( (String) -> Void )?){
         
-        let urlStr: String = "https://p.urbi.co/v1/location/milano/vehicle/sharengo,mimoto"
+        let urlStr: String = ""
         let url = NSURL(string: urlStr)!
         
         let config = URLSessionConfiguration.default
