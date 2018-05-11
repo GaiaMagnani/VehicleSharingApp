@@ -23,7 +23,7 @@ class ServiceRequest {
         
         config.httpAdditionalHeaders = [
             "Accept": "application/json",
-            "x-api-key": "Nv3day0hzV3GZ0JceINKM8LxYfcQc0k346paK8L7"
+            "x-api-key": ""
         ]
         
         let urlSession = URLSession(configuration: config)
